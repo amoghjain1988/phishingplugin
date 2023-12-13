@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Phisihing extension",
+    "version": "1.0",
+    "description": "Phisihing Detection Chrome extension.",
+    "permissions": [     
+      "https://mail.google.com/",
+      "activeTab"],
+    "background": {
+      "scripts": [
+        "background.js"
+      ],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "16": "images/image1.png",  
+          "48": "images/image2.png",
+          "128": "images/image3.png"
+      }
+  }
+  }
+  
