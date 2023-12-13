@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     var button = document.getElementById('myButton');
     button.addEventListener('click', function () {
-        alert('Button clicked!');
-        // Add any logic you want to be executed when the button is clicked
+        var textBoxValue = "email data";
+        alert('You entered: ' + textBoxValue);
+        // You can add more logic here to use the text value
     });
 });
